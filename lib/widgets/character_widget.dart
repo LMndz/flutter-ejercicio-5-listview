@@ -53,7 +53,7 @@ class CharacterWidget extends StatelessWidget {
                           Expanded(
                             child: Text(character.cargo,
                                 style: const TextStyle(
-                                    color: Colors.white, fontSize: 16)),
+                                    color: Colors.white, fontSize: 25)),
                           ),
                         ])),
                   ],
