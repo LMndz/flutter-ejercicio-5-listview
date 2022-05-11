@@ -34,25 +34,28 @@ class CharacterWidget extends StatelessWidget {
                     ),
                     Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8.0),
-                        child: Row(
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.all(16.0),
-                              width: 60,
-                              height: 60,
-                              decoration: BoxDecoration(
-                                  color: const Color.fromARGB(255, 96, 62, 151),
-                                  borderRadius: BorderRadius.circular(200)),
+                        child: Row(children: [
+                          Container(
+                            padding: const EdgeInsets.all(16.0),
+                            width: 60,
+                            height: 60,
+                            decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 96, 62, 151),
+                                borderRadius: BorderRadius.circular(200)),
+                            child: Text(
+                              character.iniciales.toString(),
+                              style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  height: 1.5),
                             ),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
-                              child: Text(character.cargo,
-                                  style: const TextStyle(
-                                      color: Colors.white, fontSize: 16)),
-                            )
-                          ],
-                        ))
+                          ),
+                          Expanded(
+                            child: Text(character.cargo,
+                                style: const TextStyle(
+                                    color: Colors.white, fontSize: 16)),
+                          ),
+                        ])),
                   ],
                 ),
               ),

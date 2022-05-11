@@ -2,17 +2,23 @@ import './character.dart';
 
 final chars = [
   Character(
-      image: 'images/Albert.jpg',
+      image: 'images/albert.png',
       name: 'Albert Alemany',
-      cargo: 'Flutter Developer'),
+      cargo: 'Flutter Developer',
+      iniciales: 'AA'),
   Character(
-      image: 'images/Gerard.jpg',
+      image: 'images/gerard.png',
       name: 'Gerard Guasch',
-      cargo: 'Android Developer'),
+      cargo: 'Android Developer',
+      iniciales: 'GG'),
   Character(
-      image: 'images/Ignasi.jpg', name: 'Ignasi Isern', cargo: 'IOS Developer'),
+      image: 'images/ignasi.png',
+      name: 'Ignasi Isern',
+      cargo: 'IOS Developer',
+      iniciales: 'II'),
   Character(
-      image: 'images/Meritxell.jpg',
+      image: 'images/meritxell.png',
       name: 'Meritxell Maimó',
-      cargo: 'React Native Developer'),
+      cargo: 'React Native Developer',
+      iniciales: 'MM'),
 ];
